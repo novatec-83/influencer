@@ -1,0 +1,153 @@
+ @import "../../../assets/fonts/font-awesome-4.7.0/css/font-awesome.css";
+ @import "../../../assets/styles/scss/components/social-buttons";
+
+ .btn-icon {
+   min-width: 160px;
+ }
+ .login-form-1{
+   //background: #f1f8e9;
+   background: #e2e2e2;
+   //width: 90%;
+   max-width: 450px;
+   margin-top: 14%;
+   padding: 30px;
+   border-radius: 5px;
+   //box-shadow: 0px 5px 10px #ccc;
+   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.58);
+ }
+ #or{
+   margin-left: 45%;
+ }
+ //input{
+ //  width: 95%;
+ //  margin-left: 1%;
+ //  font-size: 18px;
+ //  //border: 1px solid rgba(0,0,0,.15);
+ //  border-radius: 3px ;
+ //}
+ .change-form-btn{
+   width: 30%;
+   background:#cc0000;
+   border: none;
+   margin-left: 30%;
+   color: #ffffff;
+   padding: 4px;
+   font-weight: 600;
+   border-radius: 36px;
+   font-size: 22px;
+ }
+ #login{
+   cursor:pointer;
+ }
+
+ .card{
+   vertical-align: top;
+   margin:auto;
+   width: 400px;
+   max-width: 400px;
+   background-color: #fff;
+   transition: .3s all ease-in-out;
+   box-shadow: 1px 1px 7px 1px #b9b8b8;
+   border-radius: 8px;
+ }
+ .card .card-header{
+   margin-top: -40px;
+   margin-bottom: 20px;
+   background: #c31010;
+ }
+ .card [data-background-color] {
+   margin: -20px 17px 20px;
+   border-radius:5px;
+   //padding:15px;\
+   position:relative}
+ .card [data-background-color=rose]{
+   background:#000;
+   -webkit-box-shadow:1px 1px 7px 1px #8c8b8b;
+   box-shadow: 1px 1px 7px 1px #8c8b8b;
+ }
+
+ .example-full-width{
+   width: 100%;
+ }
+ .font2{
+   font-size: 14px !important;
+  //  font-weight: 700;
+   color: #000 !important;
+   cursor: pointer;
+   display: block;
+ }
+ .form-group {
+   padding-bottom: 1px;
+   margin-right: 26px;
+
+ }
+ .card .footer {
+   padding: 0px 20px 10px;
+   overflow: hidden;
+ }
+
+ .button {
+  background-color: #0a0a0a;
+  border: none;
+  color: white;
+  padding: 3px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 27px;
+  font-weight: 500;
+  margin: 13px auto;
+  cursor: pointer;
+  width: 80%;
+  border-radius: 30px;
+  box-shadow: 0 14px 26px -12px rgba(0, 0, 0, .42), 0 4px 23px 0 rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(156, 39, 176, .2) !important;
+ }
+
+ .button:focus{
+   outline: none!important;
+ }
+.login-wrap{
+  margin: 0 auto;
+  float: none;
+}
+
+
+
+
+
+
+
+
+//
+
+ .card-title{
+   margin: 0px;
+   display: block;
+  width: 100%;
+ }
+ .card-title .font {
+   font-size: 23px;
+   font-weight: bold;
+   color: #fff;
+   font-family: sans-serif;
+   margin: 0px;
+ }
+.privacy a{
+  // font-weight: 500;
+  font-size: 14px;
+  color: blue;
+  // padding: 0 20px;
+  font-weight: bold;
+}
+ mat-form-field{
+   width: 100%;
+   font-size: 16px;
+ }
+.forgot-pass{
+  color: blue!important;
+}
+
+ .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+   background-color: rgba(255, 0, 0, 0.62);
+ }
+

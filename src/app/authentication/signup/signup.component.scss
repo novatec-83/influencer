@@ -1,0 +1,137 @@
+@import "../../../assets/fonts/font-awesome-4.7.0/css/font-awesome.css";
+@import "../../../assets/styles/scss/components/social-buttons";
+
+.btn-icon {
+  min-width: 160px;
+}
+.login-form-1{
+  //background: #f1f8e9;
+  background: #FFFFFF;
+  //width: 90%;
+  // max-width: 750px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  //box-shadow: 0px 5px 10px #ccc;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.58);
+}
+#or{
+  margin-left: 45%;
+}
+mat-form-field{
+  width: 100%;
+  font-size: 18px;
+  /* margin-left: 5%; */
+  border-radius: 3px;
+}
+mat-select{
+  width: 100%;
+  padding: 0;
+}
+
+.change-form-btn{
+  width: 30%;
+  background:#cc0000;
+  border: none;
+  margin-left: 30%;
+  color: #ffffff;
+  padding: 4px;
+  font-weight: 600;
+  border-radius: 36px;
+  font-size: 22px;
+}
+select{
+  width: 80%;
+  height: 40px;
+  background: #FFFFFF;
+  margin-left: 6%;
+  margin-top: 3%;
+}
+.mat-select-trigger{
+  color: #000;
+}
+
+ .card .card-header  {
+   margin: -50px 17px 20px;
+   background-color: #000000;
+   display: inline-block;
+   -webkit-box-shadow:1px 1px 7px 1px #8c8b8b;
+   box-shadow: 1px 1px 7px 1px #8c8b8b;
+   border-radius: 5px;
+ }
+.card-header [data-background-color=rose] {
+  background: #c31010;
+  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(233, 30, 99, .4);
+}
+.button {
+  background-color: #0a0a0a;
+  border: none;
+  color: white;
+  padding: 3px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 13px auto 0;
+  cursor: pointer;
+  width: 80%;
+  border-radius: 25px;
+}
+
+.button:focus{
+  outline: none;
+}
+#btn_link{
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  padding: 0 0 0 1px;
+}
+
+.container .header-title{
+  background-color: #0c0c0c;
+  margin-top: -40px;
+  border-radius: 4px;
+  width: 100%;
+
+  //transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+  //display: block;
+  //position: relative;
+  //padding: 24px;
+  //box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+.md-card{
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+}
+.card-title {
+  margin: 0px;
+}
+.card-title .font {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  font-family: sans-serif;
+  margin: 0px;
+}
+.signup-tagline{
+  margin: 0 0 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: -15px;
+}
+.fa-awsm{
+  // margin: 0 auto;
+  float: right;
+  color: black;
+}
+
+.mat-input-element {
+ width: 50%!important;
+ color: #000!important;
+ font-size: 14px!important;
+}

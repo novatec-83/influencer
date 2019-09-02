@@ -1,0 +1,228 @@
+<app-loader></app-loader>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<div class="login-background">
+  <div class="bg-2 col-md-12 col-lg-12" style=" padding: 70px 0 20px;
+  height: 100%;">
+    <!--<form class="login-form-1" (ngSubmt)="onSubmit(f)" #f="ngForm">-->
+    <form class="login-form-1 sh-signup-form-fix" [formGroup]="registerUser" (ngSubmit)="onSubmit()">
+
+      <div class="card margin-0">
+        <div class="card-header text-center" data-background-color="rose">
+          <h4 class="card-title"><label class="font"> Signup to your Account </label></h4>
+
+        </div>
+        <p  class="signup-tagline">Okay, lets get started! First, tell us about yourself and the address we're going to help with you</p>
+
+      <div class="row">
+        <div class="col-md-4">
+          <mat-form-field class="form-group" id="mat-filed">
+            <input  type="text" matInput name="username" formControlName="userName"  placeholder="Username"  [(ngModel)]="model.username"   required>
+            <mat-error *ngIf="submitted && f.userName.errors" class="invalid-feedback">
+              <span *ngIf="f.userName.errors.required">Username is required</span>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-md-4">
+          <mat-form-field class="example-full-width">
+            <input type="text" matInput  name="full" placeholder=" Full Name" formControlName="fullName"  [(ngModel)]="model.name"required>
+            <mat-error *ngIf="submitted && f.fullName.errors" class="invalid-feedback">
+              <span *ngIf="f.fullName.errors.required">Name is required</span>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-md-4">
+          <mat-form-field>
+            <input type="text" matInput placeholder="Email" formControlName="eMail" name="email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"  [(ngModel)]="model.email"  required>
+            <mat-error *ngIf="submitted && f.eMail.errors" class="invalid-feedback">
+              <span *ngIf="f.eMail.errors.required">Email is required</span>
+            </mat-error>
+          </mat-form-field>
+     </div>
+        <div class="col-md-4">
+
+          <mat-form-field style="margin-top: 10px">
+            <input matInput type="password" placeholder=" Password"  formControlName="passWord"   name="pass" [(ngModel)]="model.password" required>
+            <mat-error *ngIf="submitted && f.passWord.errors" class="invalid-feedback">
+              <span *ngIf="f.passWord.errors.required">Password is required</span>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-md-4">
+          <mat-form-field >
+          <mat-select placeholder="Select Country" formControlName="counTry" name="relationship" style="color: #000" [(ngModel)]="model.country" (ngModelChange)="onSelect($event)" >
+            <mat-option *ngFor="let data of getContriesData" [value]="data.name">{{ data.name }}</mat-option>
+
+          </mat-select>
+
+            <mat-error *ngIf="submitted && f.counTry.errors" class="invalid-feedback">
+              <span *ngIf="f.counTry.errors.required">Country is required</span>
+            </mat-error>
+
+          </mat-form-field>
+        </div>
+        <div class="col-md-4">
+          <mat-form-field class="example-full-width">
+          <mat-select name="relationship" style="color: #000" formControlName="staTe" [(ngModel)]="model.state"  (ngModelChange)="getCities($event)"  required placeholder="Select States">
+            <mat-option *ngFor="let data of getContryData1"  [value]="data.name">{{ data.name }}</mat-option>
+          </mat-select>
+
+            <mat-error *ngIf="submitted && f.staTe.errors" class="invalid-feedback">
+              <span *ngIf="f.staTe.errors.required">State is required</span>
+            </mat-error>
+          </mat-form-field>
+          </div>
+
+          <div class="col-md-6">
+            <mat-form-field class="example-full-width">
+            <mat-select name="relationship" style="color: #000" id="pho" formControlName="ciTy" [(ngModel)]="model.city" required placeholder="Select City">
+              <mat-option *ngFor="let city of getCity"  [value]="city.name">{{ city.name }}</mat-option>
+            </mat-select>
+              <mat-error *ngIf="submitted && f.ciTy.errors" class="invalid-feedback">
+                <span *ngIf="f.ciTy.errors.required">City is required</span>
+              </mat-error>
+            </mat-form-field>
+            </div>
+
+            <div class="col-md-6">
+
+              <mat-form-field  style="margin-top: 10px">
+                <input type="text" matInput id="pho" formControlName="phoNe" placeholder=" Phone" name="pass"   [(ngModel)]="model.phone"  required>
+                <mat-error *ngIf="submitted && f.phoNe.errors" class="invalid-feedback">
+                  <span *ngIf="f.phoNe.errors.required">Phone is required</span>
+                </mat-error>
+              </mat-form-field>
+         </div>
+
+         <div class="col-md-6">
+           <mat-form-field class="example-full-width">
+           <mat-select style="color: #000" name="relationship" formControlName="eduCation" [(ngModel)]="model.education" placeholder="Select Education">
+             <mat-option *ngFor="let edu of EDUCATIONS" [value]="edu.code">{{ edu.show }}</mat-option>
+           </mat-select>
+             <mat-error *ngIf="submitted && f.eduCation.errors" class="invalid-feedback">
+               <span *ngIf="f.eduCation.errors.required">Education is required</span>
+             </mat-error>
+           </mat-form-field>
+     </div>
+
+     <div class="col-md-6 ">
+       <mat-form-field class="example-full-width">
+       <mat-select  name="relationship" formControlName="gendeR" style="color: #000" [(ngModel)]="model.gender" placeholder="Select Gender">
+         <mat-option *ngFor="let g of genders" [value]="g.value">{{ g.show }}</mat-option>
+
+
+       </mat-select>
+         <mat-error *ngIf="submitted && f.gendeR.errors" class="invalid-feedback">
+           <span *ngIf="f.gendeR.errors.required">Gender is required</span>
+         </mat-error>
+       </mat-form-field>
+ </div>
+        <div class="col-md-6">
+          <!--<i class="fa fa-key" style="zoom: 100%; color: #aaaaaa"></i>-->
+          <mat-form-field class="example-full-width">
+          <mat-select name="relationship" id="pho" style="color: #000" formControlName="relationShip" [(ngModel)]="model.relationship" placeholder="Select Relationship">
+            <mat-option *ngFor="let relation of RElATIONSHIPS" [value]="relation.show">{{ relation.show }}</mat-option>
+
+          </mat-select>
+            <mat-error *ngIf="submitted && f.relationShip.errors" class="invalid-feedback">
+              <span *ngIf="f.relationShip.errors.required">Relationship status is required</span>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col-md-6">
+          <!--<i class="fa fa-key" style="zoom: 100%; color: #aaaaaa"></i>-->
+          <mat-form-field class="example-full-width">
+          <mat-select name="relationship" formControlName="employement_Status"  style="color: #000" id="pho" [(ngModel)]="model.employment_status" placeholder="Select Employement">
+            <mat-option *ngFor="let relation of EMS" [value]="relation.show">{{ relation.show }}</mat-option>
+          </mat-select>
+            <mat-error *ngIf="submitted && f.employement_Status.errors" class="invalid-feedback">
+              <span *ngIf="f.employement_Status.errors.required">Employement status is required</span>
+            </mat-error>
+          </mat-form-field>
+        </div>
+       
+    
+        <!-- <div class="col-md-6"> -->
+          <!--<i class="fa fa-envelope" style="zoom: 100%; color: #aaaaaa"></i>-->
+          <!-- <mat-select name="relationship" style="color: #000" id="pho" [(ngModel)]="model.city" #city="ngModel" [ngModelOptions]="{standalone: true}"  required placeholder="Select City">
+            <mat-option *ngFor="let city of getCity"  [value]="city.name">{{ city.name }}</mat-option>
+
+            <option></option>
+
+
+          </mat-select>
+
+        </div> -->
+        <!-- <div class="col-md-6">
+
+          <mat-form-field>
+          <input type="text" matInput id="pho" placeholder=" Phone" name="pass" [ngModelOptions]="{standalone: true}"  [(ngModel)]="model.phone" #phone="ngModel"   required>
+          </mat-form-field>
+        </div>       -->
+        <!-- <div class="col-md-6">
+
+          <mat-select style="color: #000" name="relationship" [(ngModel)]="model.education" placeholder="Select Education">
+            <mat-option *ngFor="let edu of EDUCATIONS" [value]="edu.code">{{ edu.show }}</mat-option>
+
+
+          </mat-select>
+
+
+        </div> -->
+        <!-- <div class="col-md-6">
+
+          <mat-select  name="relationship" style="color: #000" [(ngModel)]="model.gender" placeholder="Select Gender">
+            <mat-option *ngFor="let g of genders" [value]="g.value">{{ g.show }}</mat-option>
+
+
+          </mat-select>
+
+        </div> -->
+        <!-- <div class="col-md-6">
+          <i class="fa fa-key" style="zoom: 100%; color: #aaaaaa"></i>
+          <mat-select name="relationship" id="pho" style="color: #000" [(ngModel)]="model.relationship" placeholder="Select Relationship">
+            <mat-option *ngFor="let relation of RElATIONSHIPS" [value]="relation.show">{{ relation.show }}</mat-option>
+
+          </mat-select>
+        </div> -->
+        <!-- <div class="col-md-6">
+          <i class="fa fa-key" style="zoom: 100%; color: #aaaaaa"></i>
+          <mat-select name="relationship" style="color: #000" id="pho" [(ngModel)]="model.employment_status" placeholder="Select Empoyement">
+            <mat-option *ngFor="let relation of EMS" [value]="relation.show">{{ relation.show }}</mat-option>
+
+
+          </mat-select>
+        </div> -->
+      </div>
+        <div class="row">
+          <div class="col-md-6">
+          <div class="form-group text-center" [ngClass]="{ 'has-error':!recaptcha}" style="margin: 0 auto">
+      <div>
+        <app-recapcha style="margin:0 auto; float: left; padding: 10px; margin-top: 10px;"></app-recapcha>
+        <div  style="float:right; margin: 50px 25px; font-size: x-large;font-weight: bold;color: red;"  *ngIf="!recaptcha" >Recaptcha is required</div>
+      </div>
+
+          </div>
+        </div>
+        <div class="col-md-6" style="margin-top:10px">
+          <p class="signup-auth"><mat-slide-toggle></mat-slide-toggle>
+            By clicking on the "Register" button below, you understand and agree that the use of this Website, Mobile Apps,
+            AI and ALL other related Technology Platforms are subject to the <a href="https://www.influexpai.com/Terms-and-Conditions" target="_blank">Terms of Use</a> and <a href="https://www.influexpai.com/privacy_policy">Privacy Policy</a>.
+          </p>
+          <button type="submit"  class="button" tabindex=3 style="margin-top:10px;"> Register</button>
+          <p class="signup-auth text-center">Already have account. <a [routerLink]="['/authentication/signin']">Sign in</a></p>
+        </div>
+        </div>
+        <!-- <button type="submit" (click)="onSubmit()"  class="button" tabindex=3> Sign up</button> -->
+
+        <!-- <div class="row">
+
+          <div class="text-center col-md-12 col-sm-12">
+            Already Registered?<a class="" id="btn_link" [routerLink]="['/authentication/signin']">Login</a>
+         </div>
+        </div> -->
+
+      </div>
+    </form>
+  </div>
+</div>

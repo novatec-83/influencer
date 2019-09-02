@@ -1,0 +1,218 @@
+.container
+{
+//  height: 150px;
+//  background-color: grey;
+ width: 100%;
+
+}
+
+.inner-container {
+  width: 90%;
+  margin: 0 auto;
+  -webkit-box-shadow: 1px 1px 19px 2px #ccc;
+  box-shadow: 1px 1px 19px 2px #ccc;
+  box-shadow: none;
+}
+
+.mat-input-element {
+  //font: 18px;
+  background: 0 0;
+  /* color: currentColor; */
+  color: black;
+  font-weight: 600;
+  border: none;
+  outline: 0;
+  padding: 0;
+  margin: 3px 0;
+  width: 100%;
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.mat-input-element::placeholder {
+  
+  // opacity: 1;
+  font-weight: bolder;
+  
+}
+
+
+
+
+
+.name{
+//width: 100%;
+height: 55px;
+background-color:#000;
+color: white;
+padding: 10px;
+text-align: center;
+  border-radius: 10px 10px 0 0;
+
+}
+.contact{
+
+  width: 100%;
+// height: 55px;
+// background-color: red;
+// color: white;
+padding: 10px;
+}
+
+.example-button-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ 
+}
+.float-left{
+    padding-top: 17px;
+    padding-left: 40px;
+    font-size: 23px;
+}
+.float-right{
+    padding-top: 17px;
+    padding-right: 40px;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+.profile-form{
+  width: 100%;
+  padding: 20px 20px;
+
+
+}
+.card [data-background-color=rose] {
+  background: #000;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(0, 0, 0, .4);
+}
+.card [data-background-color]{
+  box-shadow: 0 10 px 30px -12px rgba(0,0,0,.42), 0 4px 25px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+  margin: -20px 15px 0;
+  /* border-radius: 3px; */
+  padding: 15px;
+  background-color: #999;
+  position: relative;
+}
+.mat-select{
+  text-align: left;
+  height: 35px;
+}
+
+
+
+
+
+
+
+
+.info-box{
+  background: #fff;
+  border-radius:3px;
+  margin-bottom: 0px !important;
+  margin-top: 25px;
+}
+.manage-link{
+  color: #cc0000;
+}
+.scial-bar .social{
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+}
+.card-header {
+  padding: 18px!important;
+  margin: -30px 15px 35px 10px!important;
+  background-color: #030303!important;
+  border-bottom: 0 solid rgba(0, 0, 0, 0.06)!important;
+}
+.fa-user-o:before{
+  color: white;
+  font-size: 25px;
+}
+// mat-form-field{
+//   font-size: 16px;
+//   font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+// }
+.btn-rounded{
+  background: #000;
+  color: #fff;
+  text-align: center;
+  margin-top: 1%;
+  border-color: #000;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 17px;
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,.5),0 6px 20px 0 rgba(0,0,0,.19)!important;
+  width: -webkit-fill-available;
+}
+//
+
+.btn-rounded:hover{ 
+  
+  background-color: #cc0000!important;
+  border: none;
+  transition: 1s;
+  box-shadow: 2px 2px 5px 3px #ad1919!important;
+}
+
+
+.influ-profile{
+
+  text-align: left!important;
+  margin: 0 -9px 3px;
+}
+
+.influ-para{
+
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 6px;
+  margin: 0 -5px 10px;
+  box-shadow: 1px 1px 24px -11px #242121;
+
+}
+
+.profile-form[_ngcontent-c4] {
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 30px;
+}
+
+
+.nav-link .copy-right:hover {
+  background-color: transparent;
+  color:white !important;
+}
+
+.profile-heading{
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  background: #1b3763;
+  border-radius: 5px;
+  margin: -30px 0 0;
+  padding: 6px
+}
+//.mat-select-trigger{
+//  margin-top: 18px!important;
+//  font-size: 16px!important;
+//  font-weight: 700!important;
+//}
+

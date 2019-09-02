@@ -1,0 +1,604 @@
+/* You can add global styles to this file, and also import other style files */
+/* width */
+
+body{
+
+ font-family:  "Roboto", "Helvetica", "Arial", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #cc0000;
+}
+
+
+/*Start From custome */
+.sh-signup-form-fix .mat-input-infix {
+  border-top: 0 solid transparent;
+  padding-bottom: 10px;
+}
+input{
+  padding-top: 10px!important;
+}
+.sh-signup-form-fix .mat-input-underline {
+  bottom: 18px
+}
+.sh-signup-form-fix .mat-input-wrapper {
+  padding-bottom: 10px
+}
+/*.sh-signup-form-fix .mat-select {*/
+/*  padding-bottom: 10px*/
+/*}*/
+.sh-signup-form-fix .mat-error {
+  font-size: 14px;
+  padding-top: 0
+}
+.sh-signup-form-fix .mat-select-placeholder.mat-floating-placeholder{
+  top: -14px !important;
+}
+.sh-signup-form-fix .card .card-header.card-header-icon+.card-content .card-title {
+  padding-bottom: 25px
+}
+.sh-signup-form-fix .mat-input-element {
+  font-size: 16px;
+  font-weight: bold
+}
+.sh-signup-form-fix .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-placeholder {
+  font-size: 18px !important;
+  color: #000 !important;
+}
+
+
+
+.sh-signup-form-fix .mat-select-placeholder{
+  font-size: 15px !important;
+  font-weight: bolder!important;
+  color: #A4A4A4 !important;
+  margin-bottom: .5rem;
+  display: none!important;
+}
+
+
+
+
+
+
+
+.sh-signup-form-fix.edit-profile .form-group {
+  padding-bottom: 0!important;
+  margin: 0!important
+}
+.sh-signup-form-fix .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-placeholder {
+  transform: translateY(-10px) scale(.75) perspective(100px) translateZ(0)!important;
+  -ms-transform: translateY(5px) scale(.75)!important
+}
+.sh-signup-form-fix .mat-form-field-prefix .mat-icon {
+  font-size: 125%!important
+}
+.sh-signup-form-fix.edit-profile .mat-input-placeholder.mat-empty {
+  top: 1.28125em!important
+}
+
+
+
+.sh-signup-form-fix.mat-focused .mat-form-field-placeholder.mat-form-field-float, .mat-form-field-placeholder.mat-form-field-empty, .mat-form-field-placeholder.mat-form-field-float:not(.mat-form-field-empty) {
+  font-size: 16px !important;
+  font-weight: bold;
+  color: grey !important;
+}
+
+.app ng-sidebar > .sidebar-panel.ng-sidebar .menu{
+  padding: 68px 0 110px !important;
+}
+.app ng-sidebar > .sidebar-panel.ng-sidebar .menu .navigation-item {
+  border-bottom: 1px solid #CCCCCC!important;
+  transition: .5s;
+}
+.app ng-sidebar > .sidebar-panel.ng-sidebar .menu .navigation-link{
+  color: #000000;
+  padding-left: 7px;
+  display: flow-root;
+
+}
+.app ng-sidebar > .sidebar-panel.ng-sidebar .menu .navigation-link :hover{
+  color: white;
+}
+.app ng-sidebar > .sidebar-panel.ng-sidebar .menu .navigation-item:active {
+  background: black;
+  color: white;
+}
+.app ng-sidebar > .sidebar-panel.ng-sidebar .menu .navigation-item:hover{
+  border-left: 4px solid #000;
+}
+.connect-box{
+  width: 70%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 2px #edecec;
+}
+.connect-box h2{
+  border-bottom: 2px solid #c00;
+  font-family: sans-serif;
+  padding-bottom: 6px;
+}
+.mat-stepper-horizontal, .mat-stepper-vertical {
+  box-shadow: 0px 0px 5px 2px #e2e2e2;
+  border-radius: 10px;
+}
+.mat-horizontal-stepper-header-container {
+  background: #000;
+  border-radius: 10px 10px 0 0;
+}
+.mat-step-header .mat-step-label.mat-step-label-active {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+}
+.mat-step-header .mat-step-icon {
+  background-color: #fff;
+  color: #000;
+}
+.mat-step-header .mat-step-label, .mat-step-header .mat-step-optional {
+  color: #ffffff;
+}
+.mat-horizontal-content-container {
+  padding: 10px !important;
+}
+.stepper-style{
+  width: 80%;
+  margin: 0 auto;
+}
+.uploaded-pic{
+  /*float: left;*/
+  border: 1px solid;
+  height: auto;
+  border-radius: 4px;
+  padding: 0;
+  margin: -35px auto 15px;
+}
+.uploaded-pic img, .width100{
+  width: 100%;
+}
+.margin-0{
+  margin: 0;
+}
+.margin-top-70{
+  margin-top: 70px;
+}
+.margin-b-18px{
+  margin-bottom: 18px;
+}
+.position-r{
+  position: relative;
+}
+.heading-1{
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #000;
+}
+/* .swal2-icon{
+  width: 3.5em !important;
+    height: 3.5em !important;
+    margin: 5px auto 15px !important;
+}
+.swal2-icon.swal2-error [class^='swal2-x-mark-line'][class$='left']{
+  left: 5px !important;
+  top: 26px !important;
+}
+.swal2-icon.swal2-error [class^='swal2-x-mark-line'][class$='right']{
+  right: 5px !important;
+  top: 27px !important;
+} */
+.swal2-popup .swal2-actions{
+  margin: 0 auto !important;
+}
+.custom-navbar .navbar-nav .dropdown-menu-right{
+  min-width: fit-content !important;
+}
+.profile-btn{
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 25px;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+.margin-top-10{
+  margin-top: 10px;
+}
+.btn-fill{
+  background: #000;
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 25px;
+    box-shadow: 0 9px 18px -20px rgba(0, 0, 0, .42), 0 4px 15px 0 rgba(0, 0, 0, .12), 0 8px 8px -7px rgba(0, 0, 0, .2);
+}
+
+
+/* Start Profile page */
+
+.social-bar{
+  position: relative;
+  border-bottom: 2px solid #000;
+  margin-bottom: 10px;
+}
+.manage-label a{
+  position: absolute;
+  right: 0;
+  top: 1px;
+  color: #000;
+}
+.scial-bar{
+  background-color: #ffffff;
+  /* width: 95%; */
+  width: 1033px;
+  margin: 0 auto;
+  padding: 10px;
+  /*border-radius: 10px;*/
+  /*box-shadow: 0 3px 5px 0 rgba(0,0,0,.5),0 6px 20px 0 rgba(0,0,0,.19)!important;*/
+  box-shadow: 1px 1px 19px 2px #ccc;
+
+}
+.social li{
+  list-style-type: none;
+  margin: 0 47px;
+  /*background: #000;*/
+  padding: 7px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:ease-in-out 1s;
+}
+.social li i{
+  zoom: 2;
+  color: #fff;
+}
+.social li:hover i{
+  color: #cc0000;
+}
+.inner-container{
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: 1px 1px 19px 2px #ccc;
+}
+/* End Profile page */
+
+/* Start login page */
+.login-background{
+  height: 100%;
+}
+.login-background .bg-3{
+  padding: 170px 0;
+  height: 100%;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  /* background-repeat-y: no-repeat; */
+}
+.login-background .bg-2{
+  padding: 70px 0 20px;
+  height: auto;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  /* background-repeat-y: no-repeat; */
+}
+.login-background .card-content{
+  padding: 0 25px;
+}
+.signup-label{
+  margin: 0;
+  font-size: 16px;
+  display: block;
+}
+/* End login page */
+
+
+/* Start Side Nav */
+.app ng-sidebar > .sidebar-panel.ng-sidebar .menu{
+  overflow: hidden;
+  /*overflow-y: scroll;*/
+  /*-webkit-box-shadow: 0 3px 5px 0 rgba(0,0,0,.5), 0 6px 20px 0 rgba(0,0,0,.19);*/
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,.5), 0 6px 20px 0 rgba(0,0,0,.19);
+}
+/* End Side Nav */
+
+
+/* Start Setting page */
+.name {
+  height: 55px;
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  display: block;
+}
+.info-box {
+  background: #fff;
+  /*border-radius: 0 0 10px 10px;*/
+  /*box-shadow: 0 3px 5px 0 rgba(0,0,0,.5),0 6px 20px 0 rgba(0,0,0,.19)!important;*/
+  box-shadow: 0 0 15px #ccc;
+  margin-bottom: 0px !important;
+}
+.setting-bar{
+  width: 100%;
+  display: block;
+  padding: 10px;
+}
+.setting-bar h5{
+  display: inline-block;
+  margin: 0;
+}
+
+/* End Setting page */
+/* Stat Social Page */
+.cannot-upload{
+  max-height: 250px; 
+  margin: 10px auto; 
+  cursor: pointer; 
+  max-width: 250px
+}
+/* End Social Page */
+
+/* Start Connect Social Page */
+.connect-card{
+  width: 350px;
+  max-width: 350px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px 1px #ccc;
+    height: auto;
+    overflow: hidden;
+}
+.img-box{
+  width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.img-box img{
+  width: 100%;
+  object-fit: cover;
+}
+.head h5{
+  margin: 0 0 10px 0;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.user-box{
+  padding: 10px;
+}
+.user-box .user-name{
+  font-size: 23px;
+    margin: 0;
+    font-weight: bold;
+}
+.user-box .detail{
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+.full-width{
+  width: 100%;
+}
+/* End Connect Social Page */
+
+/* Start Manage Profile page */
+.inner-container1{
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: 1px 1px 19px 2px #ccc;
+  background: #fff;
+  border-radius: 5px;
+    padding: 10px;
+}
+.single{
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 1px 6px 1px #ccc;
+  /* box-shadow: 1px 1px 6px 1px #ccc; */
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,.5),0 6px 20px 0 rgba(0,0,0,.19)!important;
+  border-radius:5px;
+  padding: 10px;
+  margin: 5px 0;
+}
+.single h5 , .single h6{
+  display: inline-block;
+    margin: 0;
+}
+.delete-btn {
+  width: 75%;
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  padding: 3px;
+  margin-top: 3px;
+  -webkit-box-shadow: 1px 1px 6px 1px #ccc;
+  /* box-shadow: 1px 1px 6px 1px #ccc; */
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,.5),0 6px 20px 0 rgba(0,0,0,.19)!important;
+}
+.not-connect{
+  margin: 12px 0px;
+  font-size: 20px;
+}
+/* End Manage Profile Page */
+
+/* .mat-form-field{
+  font-size: 18px;
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+} */
+
+
+
+/*Media Queries*/
+@media (max-width: 1280px) {
+  .scial-bar{
+    width: 941px;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.5),0 6px 20px 0 rgba(0,0,0,.19)!important;
+
+  }
+  .social li{
+    margin: 0 41px;
+  }
+}
+@media (max-width: 1024px) {
+  .inner-container1 {
+    width: 80%;
+    max-width: 850px;
+  }
+  .scial-bar{
+    width: 692px;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.5),0 6px 20px 0 rgba(0,0,0,.19)!important;
+
+  }
+  .social li{
+    margin: 0 23px;
+  }
+  .connect-box {
+    width: 96%;
+  }
+  .stepper-style {
+    width: 100%;
+  }
+  .form-box{
+    width: 42% !important;
+  }
+  .inner-container {
+    width: 85%;
+  }
+}
+@media (max-width: 768px) {
+  .inner-container1 {
+    width: 100%;
+  }
+  .form-box{
+    width: 56% !important;
+  }
+  .login-form-1{
+    max-width: 90% !important;
+    width: 90% !important;
+  }
+  .inner-container {
+    width: 95%;
+  }
+
+/*  .login-background .bg-3 {*/
+/*    padding: 70px 0;*/
+/*    height: 510px;*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*    !* background-position: center; *!*/
+/*    !* background-repeat-y: no-repeat; *!*/
+/*}*/
+.login-background .bg-2 {
+  padding: 70px 0;
+  height: 538px!important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  /* background-repeat-y: no-repeat; */
+}
+}
+
+@media (max-width: 425px) {
+  .form-box{
+    width: 90% !important;
+  }
+  .login-form-1{
+    max-width: 95% !important;
+    width: 95% !important;
+  }
+  .card-title .font {
+    font-size: 19px !important;
+  }
+}
+.mat-checkbox-background{
+  background-color: #0a0a0a;
+}
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background{
+
+  background-color: #000;
+}
+
+
+/* .place-color::placeholder{
+  font-size: 18px !important;
+  color: GREY!important;
+  margin-bottom: .5rem;
+} */
+
+
+@media (max-width: 425px) {
+  .scial-bar{
+    width: 388px;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.5),0 6px 20px 0 rgba(0,0,0,.19)!important;
+
+  }
+  .social li{
+    margin: 0 2px;
+  }
+}
+
+@media (max-width: 375px) {
+  .scial-bar{
+    width: 334px;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.5),0 6px 20px 0 rgba(0,0,0,.19)!important;
+
+  }
+  .social li{
+    margin: 0 -2px;
+  }
+}
+
+
+@media (max-width: 1466) {
+  .inner-container .res-1440{
+    
+    max-width: 986.1px!important;
+
+  }
+
+}
+h1, h2,h3, h4, h5,h6{
+  font-family: sans-serif!important;
+}
+
+.mat-select-trigger{
+  margin-top: 18px!important;
+  font-size: 16px!important;
+  font-weight: 700!important;
+}
+.form-control.is-invalid:focus {
+  border-color: white!important;
+}
